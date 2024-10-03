@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+	<title></title>
+</head>
+<body>
+<div class="input"><input type="range" min="60" max="400" onchange="setColumnsSize()" id="range">Columns width<span id="wd"></span></div>
+<div class="container" id="container">
+
+    <img src="https://i.pinimg.com/474x/13/90/2d/13902ded2678a4dc3f848b117576d9d6.jpg" />
+    <img src="https://i.pinimg.com/474x/e2/98/36/e29836a68ec090b95330ef1a0bb139dc.jpg" />    
+    <img src="https://i.pinimg.com/474x/9d/21/71/9d21711e94182bfc1753f434912515b0.jpg" />    
+    <img src="https://i.pinimg.com/474x/ab/b5/6f/abb56ff7258d357f23e03b218c24911e.jpg" />    
+    <img src="https://i.pinimg.com/474x/bb/a9/78/bba97892d1dc315395c6d8025b55f832.jpg" />    
+    <img src="https://i.pinimg.com/474x/4a/11/04/4a110427a7c071c4218bb2e595b185e6.jpg" />    
+    <img src="https://i.pinimg.com/474x/08/78/99/0878991c5b3e0b5b65050045a6b2b813.jpg" />    
+    <img src="https://i.pinimg.com/236x/0c/64/6d/0c646d5730820d382cc17e66cc056973.jpg" />    
+    <img src="https://i.pinimg.com/236x/f3/50/37/f3503799e94215d53e03d0d97a556465.jpg" />    
+    <img src="https://i.pinimg.com/236x/39/e3/79/39e379dc0b0b9a579af6622e170d4699.jpg" />    
+    <img src="https://i.pinimg.com/236x/8f/72/e0/8f72e048fbb0d03632186b5d2c53f074.jpg" />    
+    <img src="https://i.pinimg.com/236x/34/53/1c/34531c99ec15e0e25e4d6c52b922eb47.jpg" />    
+    <img src="https://i.pinimg.com/236x/e4/80/e1/e480e1d0ad4da71f95cd671a0290fa52.jpg" />
+    <img src="https://i.pinimg.com/564x/b0/49/5e/b0495ee0710cb769a8b2b74a2d605e47.jpg">
+    <img src="images/p1.jpg" />
+    <img src="https://i.pinimg.com/736x/42/1d/ef/421def217a75204e03f0027b831ac407.jpg">
+    <img src="images/p2.jpg" />
+    <img src="images/p3.jpg" />
+    <img src="https://i.pinimg.com/474x/f6/e1/74/f6e1749696e387255b3644bcbbb8556e.jpg">
+    <img src="images/p4.jpg" />
+    <img src="https://i.pinimg.com/236x/6b/bf/d4/6bbfd4fd4bd411b0770acb0abeb5c4e4.jpg">
+    <img src="images/p5.jpg" />
+    <img src="images/p6.jpg" />
+    <img src="images/p7.jpg" />
+    <img src="https://i.pinimg.com/474x/5e/a1/27/5ea127c70d3e2576eabe7847b3e958fa.jpg">
+    <img src="images/p8.jpg" />
+    <img src="images/p9.jpg" />
+    <img src="images/p10.jpg" />
+    <img src="images/p11.jpg" />
+    <img src="https://i.pinimg.com/474x/9f/78/39/9f7839e93e2382e80440b05158db7529.jpg">
+    <img src="images/p12.jpg" />
+    <img src="https://i.pinimg.com/474x/e0/25/7c/e0257ca1ecab5cd6b4948b8d834d4c1d.jpg">
+    <img src="images/p14.jpg" />
+    <img src="https://i.pinimg.com/474x/a8/1e/60/a81e6054a4fbcb28b6c21752184d093d.jpg">
+    <img src="images/p15.jpg" />
+    <img src="https://i.pinimg.com/236x/bf/86/46/bf864685111b16370b5c6daec279feeb.jpg">
+    <img src="images/p16.jpg" />
+    <img src="images/p17.jpg" />
+    <img src="images/p18.jpg" />
+    <img src="https://i.pinimg.com/236x/eb/dc/54/ebdc54d6711bee2bd2a57f024a88f0ca.jpg">
+    <img src="images/p19.jpg" />
+    <img src="images/p20.jpg" />
+    <img src="https://i.pinimg.com/736x/c9/6b/64/c96b64b6d8864cc0665981a5cbe89412.jpg">
+    <img src="https://i.pinimg.com/474x/b6/2e/49/b62e492d47b130f5c9acf3ae0cb1debb.jpg">
+    
+</div>
+<script>
+    var box = document.getElementById('container');
+
+    function setColumnsSize() {
+        var columnWidth = document.getElementById('range').value;
+        box.style.columnWidth = columnWidth + 'px';
+        document.getElementById('wd').innerHTML = columnWidth + 'px';
+    }
+</script>
+</body>
+</html>
+
+
+
